@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Gym Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #777;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #999;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Gym</h1>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#classes">Classes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>About Us</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel ipsum nec odio vestibulum dapibus. Cras congue libero sed est vestibulum, nec suscipit nulla accumsan. Ut ac fringilla nisi. Aliquam nec mauris vitae dolor commodo placerat. Aliquam fringilla lectus nisi, at sodales arcu accumsan non. Aliquam erat volutpat.</p>
+  <button class="button">Join Now</button>
+
+  <h2>Classes</h2>
+  <p>Check out our classes schedule and join us to stay fit!</p>
+  <button class="button">View Classes</button>
+
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+    <input type="submit" value="Send Message">
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2024 My Gym. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
